@@ -19,7 +19,9 @@ function clicker(e)
   {
     if (e.target.className.search("red") === -1)
       e.target.className = e.target.className + " blue";
-    
+    else
+      e.target.className = e.target.className.replace("red","blue");
+      
     e.target.className.trim();
   }
   else
