@@ -22,7 +22,7 @@ function clicker(e)
     else
       e.target.className = e.target.className.replace("red","blue");
       
-    e.target.className.trim();
+    e.target.className = e.target.className.trim();
   }
   else
   {
