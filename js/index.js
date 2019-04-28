@@ -17,7 +17,8 @@ function clicker(e)
 {
   if (e.target.className.search("blue") === -1)
   {
-    e.target.className = String.trim(e.target.className + " blue");
+    e.target.className = e.target.className + " blue";
+    e.target.className.trim();
   }
   else
   {
@@ -29,7 +30,8 @@ function hover(e)
 {
   var str = e.target.className;
   if (str.search("hover") === -1)
-    e.target.className = String.trim(e.target.className + " hover");
+    e.target.className = e.target.className + " hover";
+    e.target.className.trim();
 }
 
 function unhover(e)
