@@ -34,13 +34,13 @@ function hover(e)
 {
   var str = e.target.className;
   if (str.search("hover") === -1)
-    e.target.className = e.target.className + " hover";
+    e.target.className = e.target.className + " hoverin";
     e.target.className = e.target.className.trim();
 }
 
 function unhover(e)
 {
   console.log("unhover");
-  e.target.className = e.target.className.replace("hover","");
+  e.target.className = e.target.className.replace("hoverin","");
   e.target.className = e.target.className.trim();
 }
