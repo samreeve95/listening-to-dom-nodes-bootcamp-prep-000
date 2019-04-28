@@ -12,7 +12,7 @@ function init(event)
   p.addEventListener('mouseover', hover);
   p.addEventListener('mouseout', unhover);
   
-  const input = document.querySelector('input');
+  var input = document.querySelector('input');
 
   input.addEventListener('keydown', function(e) {
     console.log(e.key);
