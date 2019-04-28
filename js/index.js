@@ -16,9 +16,9 @@ function init(event)
 
   input.addEventListener('keydown', function(e) {
     if (e.key === "g") {
-      return e.preventDefault()
+      return e.preventDefault();
     } else {
-      console.log(e.key)
+      console.log(e.key);
     }
   });
 }
