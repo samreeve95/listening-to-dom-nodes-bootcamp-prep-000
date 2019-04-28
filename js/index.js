@@ -32,15 +32,11 @@ function clicker(e)
 
 function hover(e)
 {
-  var str = e.target.className;
-  if (str.search("hover") === -1)
-    e.target.className = e.target.className + " hover";
-    e.target.className = e.target.className.trim();
+  var colour = e.target.style.backgroundcolor;
+  console.log(colour);
 }
 
 function unhover(e)
 {
-  console.log("unhover");
-  e.target.className = e.target.className.replace("hover","");
-  e.target.className = e.target.className.trim();
+  
 }
