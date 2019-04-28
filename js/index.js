@@ -35,7 +35,7 @@ function hover(e)
   var str = e.target.className;
   if (str.search("hover") === -1)
     e.target.className = e.target.className + " hover";
-    e.target.className = e.target.className.replace("/^ /","");
+    e.target.className = e.target.className.replace("/^\s/","");
 }
 
 function unhover(e)
