@@ -41,5 +41,6 @@ function hover(e)
 function unhover(e)
 {
   console.log("unhover");
-  e.target.className = e.target.className.replace(" hover","");
+  e.target.className = e.target.className.replace("hover","");
+  e.target.className = e.target.className.trim();
 }
