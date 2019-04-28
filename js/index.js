@@ -33,7 +33,8 @@ function clicker(e)
 function hover(e)
 {
   var colour = e.target.style.backgroundColor;
-  
+  console.log(colour);
+  e.target.style.backgroundColor = #ff0000;
 }
 
 function unhover(e)
